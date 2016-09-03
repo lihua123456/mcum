@@ -82,8 +82,30 @@
       圈问题，即TSP旅行售货员问题。TSP问题是典型的NP-hard问题，不存在多项式时间
       算法求其最优解。我们通过建立贪婪算法和遗传算法，对电路板上的位点进行遍历
       ，最终回到起点，得到最优焊锡顺序，求得相应的路径长。
-      将问题看做定义在图
+      
+      将问题看做定义在图$G=(V,E)$上的TSP问题，其中$V={1,2,\dots,n}$，$E=(i,j),i,j\in V$
+      图中节点之间的距离矩阵为
+      
+      \begin{equation}
+      D=\left[
+      \begin{array}{cccc}
+      	0 & d_{1,2} & \dots & d_{1,n}\\
+      	d_{2,1} & 0 & \dots & d_{2,n}\\
+      	\dots & \dots & 0 & \dots \\
+      	d_{n,1} & \dots & \dots & 0 \\
+      \end{array}
+      \right]
+      \end{equation}
     \subsection{问题一}
+    
+	   \subsubsection{蚁群算法}
+    	   蚁群算法结果如图\ref{fig:anti}，总长度为$2946.44724482$
+    	   \begin{figure}[htbp]
+    	   	\centering
+    	   	\includegraphics[width=10cm]{pic/anti_result.png}
+    	   	\caption{改进贪婪算法得到的结果}
+    	   	\label{fig:anti}
+    	   \end{figure}
       \subsubsection{遗传算法}
         对于NP困难问题智能算法是有效的的选择，这里我们选用遗传算法对问题一进行建
         模求解，并且根据实际题目的要求对遗传算法进行微调。
@@ -118,7 +140,7 @@
 		\end{figure}
       %\subsubsection{迭代计算}
         使用上述算法结构对于本问题所给的数据进行种群演化，经过长时间算法运行，得到结果如图\ref{fig:ga}，总长度为$2775.273329$
-        \begin{figure}[htbp]
+        \begin{figure}[!htbp]
         	\centering
         	\includegraphics[width=10cm]{pic/ga_result.png}
         	\caption{遗传算法结果}
@@ -140,15 +162,40 @@
             \label{fig:fail}
         \end{figure}
         
-        对于贪婪算法的改进思路
-        最终结果如图\ref{fig:greedy}所示，总长度为$2791.27883397$。
+        分析贪婪算法过程可知，算法最后产生的跨度主要由于算法本身没有确定边的拼接方向，依照这种思路对贪婪算法进行改进。
+        根据Held与Karp提出的Held-Karp模型\cite{held1970traveling}，我们使用一个向量$\pi=(\pi_1,\pi_2,\dots,\pi_k)$对
+        贪婪算法的距离矩阵$D$进行改造，如式\ref{equ:held-karp}。
+        \begin{equation}
+	        D'=\left\{
+		        \begin{array}{ll}
+		        	d_{i,j} = d_{i,j} - \pi_i - \pi_j & \textrm{$i \neq $j}\\
+		        	d_{i,j} = M & \textrm{$i=$j}
+		        \end{array}
+	        \right.
+	        \label{equ:held-karp}
+        \end{equation}
+        
+        其中$M$为一个足够大的数，$\pi_k$由式\ref{equ:pi}构造，其中$\alpha$为比例系数，比例系数越大算法就越倾向于先添加外围的点。
+        \begin{equation}
+             \left\{
+	             \begin{array}{l}
+		             \pi=(\pi_1,\pi_2,\dots{,\pi_k}),\pi_k=\alpha\cdot(len_k-\overline{len})\\
+		             len_k = \sqrt{(x_0-x_k)^2+(y_0-y_k)^2}\\
+		             \overline{len} = \frac{\sum_{k=0}^{k=n}len_k}{n}\\
+		             x_0 = \frac{\sum_{k=0}^{k=n}x_k}{n},y_0 = \frac{\sum_{k=0}^{k=n}y_k}{n}
+	             \end{array}
+             \right.
+             \label{equ:pi}
+        \end{equation}
+ 
+        根据改进贪婪算法得到最终结果如图\ref{fig:greedy}所示，总长度为$2791.27883397$。
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width=10cm]{pic/greedy_result.png}
 			\caption{改进贪婪算法得到的结果}
 			\label{fig:greedy}
 		\end{figure}
-	   \subsubsection{蚁群算法}
+
     \subsection{问题二}
       \subsubsection{贪婪算法}
         遗传算法可以获得问题的满意解但是其运行过程十分漫长不适用于题目要求，所以我们

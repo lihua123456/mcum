@@ -36,4 +36,10 @@
   \bibyear{2012}\@, \bibvolume{21}\bibnumber{(6)}\thinspace{}\textnormal{:
   }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}9}\@.
 
+\bibitem{held1970traveling}
+\bibauthor{HELD M\@, KARP R~M}\@. \bibtitle{The traveling-salesman problem and
+  minimum spanning trees}\bibmark{[J]}\@. \bibjournal{Operations Research}\@,
+  \bibyear{1970}\@, \bibvolume{18}\bibnumber{(6)}\thinspace{}\textnormal{:
+  }\bibpages{1138\thinspace{}\textnormal{--}\thinspace{}1162}\@.
+
 \end{thebibliography}
