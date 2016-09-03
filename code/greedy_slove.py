@@ -17,7 +17,8 @@ def get_list():
             if i==j:
                 dis.append(9e9)
             else:
-                dis.append((get_distance(pos_list[j],pos_list[i])-T[i]-T[j])*0.001)
+                # dis.append((get_distance(pos_list[j],pos_list[i])-T[i]-T[j])*0.001)
+                dis.append(get_distance(pos_list[j],pos_list[i]))
 
         D.append(dis)
 
@@ -41,7 +42,7 @@ def init():
 
 def get_fit(path):
     fit = 0 #functools.reduce(get_distance,target)
-    for i in range(280):
+    for i in range(279):
         dis = get_distance(pos_list[path[i]],pos_list[path[i+1]])
         # print('dis btw %d %d is %f'%(target[i],target[i+1],dis))
         fit = fit + dis
@@ -50,13 +51,11 @@ def get_fit(path):
 init()
 get_list()
 path = solve_tsp(D)
-path.append(path[0])
 print(get_fit(path))
 plt.figure()
-plt.plot(X[1:],Y[1:],'bo')
-plt.plot(X[0],Y[0],'ro')
+plt.plot(X,Y,'bo')
 a = []
-for i in range(280):
+for i in range(279):
     xp = X[path[i]]
     yp = Y[path[i]]
     xl = X[path[i+1]] - xp
