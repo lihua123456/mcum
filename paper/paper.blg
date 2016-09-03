@@ -6,44 +6,49 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
 Database file #1: mybib.bib
-You've used 3 entries,
+Warning--entry type for "赵静2008数学建模与数学实验" isn't style-file defined
+--line 28 of file mybib.bib
+Warning--Require address: 士勇2004蚁群算法及其应用
+Warning--Unsupported entry type for 赵静2008数学建模与数学实验
+You've used 5 entries,
             3107 wiz_defined-function locations,
-            729 strings with 6295 characters,
-and the built_in function-call counts, 3674 in all, are:
-= -- 349
-> -- 8
-< -- 19
-+ -- 237
-- -- 29
-* -- 138
-:= -- 342
+            738 strings with 6510 characters,
+and the built_in function-call counts, 5181 in all, are:
+= -- 511
+> -- 13
+< -- 28
++ -- 383
+- -- 41
+* -- 176
+:= -- 532
 add.period$ -- 0
-call.type$ -- 3
-change.case$ -- 10
+call.type$ -- 5
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 519
-empty$ -- 198
-format.name$ -- 20
-if$ -- 930
+cite$ -- 6
+duplicate$ -- 705
+empty$ -- 247
+format.name$ -- 32
+if$ -- 1344
 int.to.chr$ -- 0
-int.to.str$ -- 3
+int.to.str$ -- 5
 missing$ -- 0
-newline$ -- 36
-num.names$ -- 3
-pop$ -- 77
+newline$ -- 39
+num.names$ -- 4
+pop$ -- 93
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 43
+skip$ -- 66
 stack$ -- 0
-substring$ -- 406
-swap$ -- 160
+substring$ -- 565
+swap$ -- 194
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 66
-width$ -- 4
-write$ -- 70
+warning$ -- 2
+while$ -- 85
+width$ -- 6
+write$ -- 82
+(There were 3 warnings)

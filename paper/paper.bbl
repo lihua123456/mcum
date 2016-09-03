@@ -36,6 +36,12 @@
   \bibyear{2012}\@, \bibvolume{21}\bibnumber{(6)}\thinspace{}\textnormal{:
   }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}9}\@.
 
+\bibitem{士勇2004蚁群算法及其应用}
+\bibauthor{士勇\@, 永强\@, 研}\@.
+  \bibbooktitle{蚁群算法及其应用}\bibmark{[M]}\@.
+  \bibaddress{[S.l.]}\thinspace{}\textnormal{:
+  }\bibpublisher{哈尔滨工业大学出版社}\@, \bibyear{2004}\@.
+
 \bibitem{held1970traveling}
 \bibauthor{HELD M\@, KARP R~M}\@. \bibtitle{The traveling-salesman problem and
   minimum spanning trees}\bibmark{[J]}\@. \bibjournal{Operations Research}\@,
