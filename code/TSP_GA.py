@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
 
-from tsp_solver.greedy import solve_tsp
 import matplotlib.pyplot as plt
 import numpy as np
 import random

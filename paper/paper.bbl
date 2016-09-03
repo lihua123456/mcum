@@ -36,11 +36,24 @@
   \bibyear{2012}\@, \bibvolume{21}\bibnumber{(6)}\thinspace{}\textnormal{:
   }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}9}\@.
 
+\bibitem{gutin2006traveling}
+\bibauthor{GUTIN G\@, PUNNEN A~P}\@. \bibbooktitle{The traveling salesman
+  problem and its variations\thinspace{}\textnormal{: }Vol~12}\bibmark{[M]}\@.
+  \bibaddress{[S.l.]}\thinspace{}\textnormal{: }\bibpublisher{Springer Science
+  \& Business Media}\@, \bibyear{2006}\@.
+
 \bibitem{士勇2004蚁群算法及其应用}
 \bibauthor{士勇\@, 永强\@, 研}\@.
   \bibbooktitle{蚁群算法及其应用}\bibmark{[M]}\@.
   \bibaddress{[S.l.]}\thinspace{}\textnormal{:
   }\bibpublisher{哈尔滨工业大学出版社}\@, \bibyear{2004}\@.
+
+\bibitem{马良2001蚂蚁算法在组合优化中的应用}
+\bibauthor{马良\@, 项培军}\@.
+  \bibtitle{蚂蚁算法在组合优化中的应用}\bibmark{[J]}\@.
+  \bibjournal{管理科学学报}\@, \bibyear{2001}\@,
+  \bibvolume{4}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{32\thinspace{}\textnormal{--}\thinspace{}37}\@.
 
 \bibitem{held1970traveling}
 \bibauthor{HELD M\@, KARP R~M}\@. \bibtitle{The traveling-salesman problem and

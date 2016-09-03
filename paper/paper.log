@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2016.8.17)  3 SEP 2016 18:11
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2016.8.17)  3 SEP 2016 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1396,8 +1396,8 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 \tf@toc=\write3
 \openout3 = `paper.toc'.
 
- [2]
-Overfull \hbox (7.04816pt too wide) in paragraph at lines 86--88
+ [2] [3]
+Overfull \hbox (7.04816pt too wide) in paragraph at lines 100--102
 []\EU1/SimSun(0)/m/n/14.05249 将 问 题 看 做 定 义 在 图 $\OML/cmm/m/it/14.05249 G \OT1/
 cmr/m/n/14.05249 = (\OML/cmm/m/it/14.05249 V; E\OT1/cmr/m/n/14.05249 )$ \EU1/Si
 mSun(0)/m/n/14.05249 上 的 \EU1/lmr/m/n/14.05249 TSP \EU1/SimSun(0)/m/n/14.05249 
@@ -1405,14 +1405,31 @@ mSun(0)/m/n/14.05249 上 的 \EU1/lmr/m/n/14.05249 TSP \EU1/SimSun(0)/m/n/14.052
 m/n/14.05249 ，|
  []
 
-[3]
+
+Overfull \hbox (14.25034pt too wide) in paragraph at lines 114--115
+\EU1/SimSun(0)/m/n/14.05249 其 中 $\OML/cmm/m/it/14.05249 d[] \OT1/cmr/m/n/14.052
+49 = []$\EU1/SimSun(0)/m/n/14.05249 ，|  那 么 图 $\OML/cmm/m/it/14.05249 G$ \EU1/S
+imSun(0)/m/n/14.05249 的 解 $\OML/cmm/m/it/14.05249 S \OT1/cmr/m/n/14.05249 = (\O
+ML/cmm/m/it/14.05249 s[]; s[]; [] ; s[]\OT1/cmr/m/n/14.05249 )\OML/cmm/m/it/14.
+05249 ; n \OMS/cmsy/m/n/14.05249 2
+ []
+
+File: pic/anti1.png Graphic file (type QTm)
+<use  "pic/anti1.png" > [4]
 File: pic/anti_result.png Graphic file (type QTm)
  <use  "pic/anti_result.png" >
+Overfull \hbox (23.10754pt too wide) in paragraph at lines 128--135
+[]\EU1/SimSun(0)/m/n/14.05249 根 据 上 述 蚁 群 算 法 写 出 程 序 运 行 后 结 果 如 图 \EU1/lmr/m/
+n/14.05249 2[]\EU1/SimSun(0)/m/n/14.05249 ，|  总 长 度 为 $\OT1/cmr/m/n/14.05249 29
+46\OML/cmm/m/it/14.05249 :\OT1/cmr/m/n/14.05249 44724482$\EU1/SimSun(0)/m/n/14.
+05249 。|
+ []
 
-LaTeX Warning: Citation `赵静2008数学建模与数学实验' on page 4 undefined on input line 115
+
+LaTeX Warning: Citation `赵静2008数学建模与数学实验' on page 5 undefined on input line 141
 .
 
-[4]
+[5]
 File: pic/life_struct.png Graphic file (type QTm)
  <use  "pic/life_struct.png" >
 File: pic/life_cross.png Graphic file (type QTm)
@@ -1421,28 +1438,23 @@ File: pic/life_muate.png Graphic file (type QTm)
 
 <use  "pic/life_muate.png" >
 File: pic/ga_result.png Graphic file (type QTm)
- <use  "pic/ga_result.png" > [5]
+ <use  "pic/ga_result.png" > [6]
 File: pic/greedy_fail.png Graphic file (type QTm)
 
 <use  "pic/greedy_fail.png" >
-Overfull \hbox (14.5992pt too wide) in paragraph at lines 164--171
-\EU1/SimSun(0)/m/n/14.05249 成 最 后 返 回 路 径 非 常 长，|  如 图 \EU1/lmr/m/n/14.05249 6[
+Overfull \hbox (14.5992pt too wide) in paragraph at lines 190--200
+\EU1/SimSun(0)/m/n/14.05249 成 最 后 返 回 路 径 非 常 长，|  如 图 \EU1/lmr/m/n/14.05249 7[
 ]\EU1/SimSun(0)/m/n/14.05249 所 示，|  这 时 所 得 到 的 总 长 度 为 $\OT1/cmr/m/n/14.05249 
 2861\OML/cmm/m/it/14.05249 :\OT1/cmr/m/n/14.05249 03928238$\EU1/SimSun(0)/m/n/1
 4.05249 。|
  []
 
-[6]
+[7]
 File: pic/greedy_result.png Graphic file (type QTm)
  <use  "pic/greedy_result.png" >
-Overfull \hbox (9.05505pt too wide) in paragraph at lines 198--205
-[]\EU1/SimSun(0)/m/n/14.05249 根 据 改 进 贪 婪 算 法 得 到 最 终 结 果 如 图 \EU1/lmr/m/n/14.0
-5249 7[]\EU1/SimSun(0)/m/n/14.05249 所 示，|  总 长 度 为 $\OT1/cmr/m/n/14.05249 2791\
-OML/cmm/m/it/14.05249 :\OT1/cmr/m/n/14.05249 27883397$\EU1/SimSun(0)/m/n/14.052
-49 。|
- []
-
-(./paper.bbl [7]) [8] (./paper.aux)
+File: pic/greedy_result2.png Graphic file (type QTm)
+ <use  "pic/greedy_result2.png" > [8]
+(./paper.bbl [9]) [10] (./paper.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
@@ -1455,12 +1467,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 21001 strings out of 493589
- 432438 string characters out of 6148800
- 413248 words of memory out of 5000000
- 24185 multiletter control sequences out of 15000+600000
+ 21009 strings out of 493589
+ 432565 string characters out of 6148800
+ 414248 words of memory out of 5000000
+ 24191 multiletter control sequences out of 15000+600000
  18727 words of font info for 107 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  63i,12n,78p,10432b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.pdf (9 pages).
+Output written on paper.pdf (11 pages).

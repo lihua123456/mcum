@@ -29,19 +29,20 @@ class GA(object):
         path_anti = pos_data.path_anti
         self.lives = []
         for i in range(self.lifeCount):
-            # gene = [x for x in range(1,self.geneLenght-1)]
-            gene = []
-            rate =random.randint(1,100)
-            if rate > 55:
-                gene.extend(path_greddy)
-            elif rate<20:
-                gene.extend(path_anti)
-            else:
-                gene.extend(path_solve)
+            gene = [x for x in range(1,self.geneLenght-1)]
+            # gene = []
+            # rate =random.randint(1,100)
+            # if rate > 55:
+                # gene.extend(path_greddy)
+            # elif rate<20:
+                # gene.extend(path_anti)
+            # else:
+                # gene.extend(path_solve)
 
-            rate =random.randint(1,100)
-            if  rate > 50:
-                random.shuffle(gene)
+            # rate =random.randint(1,100)
+            # if  rate > 50:
+                # random.shuffle(gene)
+            random.shuffle(gene)
             gene.insert(0,0)
             gene.append(0)
             life = Life(gene)
