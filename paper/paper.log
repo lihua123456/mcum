@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2016.8.17)  4 SEP 2016 09:48
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2016.8.17)  4 SEP 2016 09:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1419,15 +1419,8 @@ File: pic/anti1.png Graphic file (type QTm)
  <use  "pic/anti1.png" >
 File: pic/anti_result.png Graphic file (type QTm)
  <use  "pic/anti_result.png" >
-Overfull \hbox (23.10754pt too wide) in paragraph at lines 147--157
-[]\EU1/SimSun(0)/m/n/14.05249 根 据 上 述 蚁 群 算 法 写 出 程 序 运 行 后 结 果 如 图 \EU1/lmr/m/
-n/14.05249 2[]\EU1/SimSun(0)/m/n/14.05249 ，|  总 长 度 为 $\OT1/cmr/m/n/14.05249 29
-46\OML/cmm/m/it/14.05249 :\OT1/cmr/m/n/14.05249 44724482$\EU1/SimSun(0)/m/n/14.
-05249 。|
- []
 
-
-LaTeX Warning: Citation `赵静2008数学建模与数学实验' on page 5 undefined on input line 162
+LaTeX Warning: Citation `赵静2008数学建模与数学实验' on page 5 undefined on input line 163
 .
 
 [5]
@@ -1443,7 +1436,7 @@ File: pic/ga_result.png Graphic file (type QTm)
 File: pic/greedy_fail.png Graphic file (type QTm)
 
 <use  "pic/greedy_fail.png" >
-Overfull \hbox (14.5992pt too wide) in paragraph at lines 215--228
+Overfull \hbox (14.5992pt too wide) in paragraph at lines 216--229
 \EU1/SimSun(0)/m/n/14.05249 成 最 后 返 回 路 径 非 常 长，|  如 图 \EU1/lmr/m/n/14.05249 7[
 ]\EU1/SimSun(0)/m/n/14.05249 所 示，|  这 时 所 得 到 的 总 长 度 为 $\OT1/cmr/m/n/14.05249 
 2861\OML/cmm/m/it/14.05249 :\OT1/cmr/m/n/14.05249 03928238$\EU1/SimSun(0)/m/n/1

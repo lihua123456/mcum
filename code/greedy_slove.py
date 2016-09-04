@@ -17,8 +17,8 @@ def get_list():
             if i==j:
                 dis.append(9e9)
             else:
-                # dis.append((get_distance(pos_list[j],pos_list[i])-T[i]-T[j])*0.001)
-                dis.append(get_distance(pos_list[j],pos_list[i]))
+                dis.append((get_distance(pos_list[j],pos_list[i])-T[i]-T[j])*0.001)
+                # dis.append(get_distance(pos_list[j],pos_list[i]))
 
         D.append(dis)
 
@@ -52,6 +52,7 @@ init()
 get_list()
 path = solve_tsp(D)
 print(get_fit(path))
+print(path)
 plt.figure()
 plt.plot(X,Y,'bo')
 a = []
