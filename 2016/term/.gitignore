@@ -1,0 +1,11 @@
+*.pyc
+*.aux
+*.log
+*.bbl
+*.blg
+*.dvi
+*.synctex.gz
+*.toc
+__pycache__
+tsp
+tes_solver
