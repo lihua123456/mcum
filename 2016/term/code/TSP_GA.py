@@ -8,11 +8,11 @@ import math
 from GA import GA
 
 class TSP(object):
-    def __init__(self, aLifeCount = 100,):
+    def __init__(self, aLifeCount = 1000,):
         self.initCitys()
         self.lifeCount = aLifeCount
         self.ga = GA(aCrossRate = 0.8, 
-            aMutationRage = 0.95, 
+            aMutationRage = 0.1, 
             aLifeCount = self.lifeCount, 
             aGeneLenght = len(self.citys)+1, 
             aMatchFun = self.matchFun())
@@ -54,7 +54,7 @@ class TSP(object):
         return lambda life: 1.0 / self.distance(life.gene)
 
 
-    def mainloop(self, n = 140000):
+    def mainloop(self, n = 40000):
           while n > 0:
                 self.ga.next()
                 distance = self.distance(self.ga.best.gene)
