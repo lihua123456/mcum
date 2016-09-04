@@ -54,7 +54,7 @@ class TSP(object):
         return lambda life: 1.0 / self.distance(life.gene)
 
 
-    def mainloop(self, n = 40000):
+    def mainloop(self, n = 140000):
           while n > 0:
                 self.ga.next()
                 distance = self.distance(self.ga.best.gene)
