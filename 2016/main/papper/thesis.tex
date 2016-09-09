@@ -34,8 +34,23 @@
   }
   \textbf{关键词：}\ 层次分析\ 元胞自动机
   
-  nothing
+  \section{问题重述}
+  \section{符号说明}
+  \section{问题分析}
+	\subsection{问题一}
+		考虑小区开放对周边道路通行的三个影响因素：道路条件、交通条件。
+		\subsubsection{道路条件}
+			经过对小区周边道路网的分析得出，道路条件受以下两个因素影响：延误时间、行程时间。
 
+			1. 延误时间（再加上道路信息：车道数目、道路交叉口数目的影响）
+			\begin{equation}
+				d_1=\frac{0.5T(1-\frac{t_g}{T})}{1-[min(1,x)\cdot{\frac{t_g}{T}}]}
+			\end{equation}
+		\subsubsection{行程时间}
+			基于美国联邦公路局函数(即BPR函数) ，并对其改进，考虑到小区内道路上行人、自行车等非
+			机动车较多的特点，增加行人对机动车的影响、自行车对机动车的影响。基于已有的研究成果
+			，得到行人、自行车分别对车辆的影响系数，得到改进BPR函数。
+	\subsection{问题二}
   \newpage
   \bibliography{mybib}
   \bibliographystyle{gbt7714}
