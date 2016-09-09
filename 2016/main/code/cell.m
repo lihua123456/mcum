@@ -46,7 +46,7 @@ sum = z;
 %cells(n/2,.25*n:.75*n) = 1;
 %cells(.25*n:.75*n,n/2) = 1;
 
-%cells = (rand(n,n))<.5 ;
+%cells = (rand(n,n))<.5 ;j
 
 cells(120,50) = 2;
 %how long for each case to stability or simple oscillators

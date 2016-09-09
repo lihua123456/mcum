@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import getopt,sys
 from  matplotlib.animation import FuncAnimation
 import random
 import math
@@ -39,26 +40,29 @@ class Map(object):
     def __init__(self, car_num, map_data):
         self.car_num = car_num
         self.map_data = map_data
+        self.length = len(map_data[0])
+        self.width = len(map_data)
         self.cars = []
 
     def init(self):
         for i in range(self.car_num):
-            self.cars.append(Car(0.1,[0,0],30,70,3,0))
+            self.cars.append(Car(0.1,[0,0],3,7,1,0))
 
     def run(self):
         for i in range(self.car_num):
             self.cars[i].drive()
 
     def plot(self):
-        fig = plt.figure(figsize=(7,7))
-        d, = plt.plot(self.cars[0].pos[0], self.cars[0].pos[1], 'bo')
-        animation = FuncAnimation(fig, self.update, d, interval=10)
-        plt.show()
+        from PIL import Image, ImageDraw
+        img = Image.new("RGB",(self.length*5,self.width*5),(0,0,0))
+        draw = ImageDraw.Draw(img)
     
-    def update(self, dot, frame_number):
-        self.cars[0].drive()
-        self.cars[0].pos[0] += self.cars[0].vector
+        for y in range(self.length):
+            for x in range(self.width):
+                if self.map_data[x][y]==0: draw.rectangle((y*5,x*5,y*5+5,x*5+5),(255,255,255))
+        img.show() 
 
+ 
     def stop(self):
         pass
 
