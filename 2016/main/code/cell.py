@@ -40,21 +40,27 @@ class Map(object):
     def __init__(self, car_num, map_data):
         self.car_num = car_num
         self.map_data = map_data
-        self.length = len(map_data[0])
-        self.width = len(map_data)
+        self.x_len = len(map_data[0])
+        self.y_len = len(map_data)
         self.cars = []
+        self.in_pos = []
+        self.out_pos = []
 
     def init(self):
+        for y in range(self.y_len):
+            for x in range(self.x_len):
+                if self.map_data[x][y]==-1: self.in_pos.append([x,y])
         for i in range(self.car_num):
             self.cars.append(Car(0.1,[0,0],3,7,1,0))
 
     def run(self):
+
         for i in range(self.car_num):
             self.cars[i].drive()
 
     def plot(self):
         from PIL import Image, ImageDraw
-        img = Image.new("RGB",(self.length*5,self.width*5),(0,0,0))
+        img = Image.new("RGB",(self.*5,self.width*5),(0,0,0))
         draw = ImageDraw.Draw(img)
     
         for y in range(self.length):
