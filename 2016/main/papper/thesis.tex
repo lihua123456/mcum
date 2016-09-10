@@ -40,6 +40,26 @@
   \section{符号说明}
   \section{问题分析}
 	\subsection{问题一}
+		\subsubsection{模糊评价}
+			开放小区主要影响道路网络结构，并且开放小区后小区中的道路人流量会增大，也会对道路的通行能力造成影响。建立的指标体系如下
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.5\textwidth]{pic/braess.eps}
+			\end{figure}
+			设影响因素的因素集$ U=\{u_1,u_2.\dots,u_n\} $，评判等级集$ V=\{v_1,v_2,\dots,v_m\} $。
+			对U中每一个因素根据评判等级指标进行模糊评判，得到评判矩阵为
+			$$
+				R=\left[
+				\begin{array}{cccc}
+					r_{1,1}	&	r_{1,2}	&	\dots	&	r_{1,n}	\\
+					r_{2,1} & r_{2,2} & \dots & r_{2,n}\\
+					\dots & \dots & \dots & \dots\\
+					r_{m,1} & r_{m,2} & \dots & r_{m,n}
+				\end{array}
+				\right]
+			$$
+		\subsubsection{道路条件}
+			开放小区会导致人流量增加
 		\subsubsection{Braess悖论}
 			数学家Dietrich Braess在1968年首次提出了Braess悖论\upcite{Braess1968Ü}。
 			考虑拓扑结构如图\ref{fig:braess}的交通网，假设交通网中的流量为4000，起点为A，终点为D
@@ -55,7 +75,24 @@
 			{100} + 45 $，达到均衡之后有$ A=B=2000 $这样每条路通过的时间都是$ \frac{2000}{100}
 			+45=65 $分钟。
 			
-			现在考虑$ B \rightarrow C $开通之后，其通过时间非常短，在这种情况下，所有司机都会选择$ A \rightarrow B \rightarrow C \rightarrow D $这条路线，因为即使所有车辆全部通过$ A \rightarrow B $所用时间也不超过40分钟，这样所有通过这条路径的时间为$ \frac{4000}{100}\times 2+10=90$分钟，Braess便是指这种情况。
+			现在考虑$ B \rightarrow C $开通之后，其通过时间非常短，在这种情况下，所有司机都会选择$ A \rightarrow B \rightarrow C \rightarrow D $这条路线，因为即使所有车辆全部通过$ A \rightarrow B $所用时间也不超过40分钟，这样所有通过这条路径的时间为$ \frac{4000}{100}\times 2+10=90$分钟，Braess悖论便是指这种情况。
+		\subsubsection{基于Braess的评价系统}
+			小区开放相当与在原有的交通网络中再次加入新的网路，其中必然会有某些情况导致Braess悖论的发生，而出现这种情时况不宜开放小区。
+			
+			查阅论文可知Pas和Principcipio在其论文中指出了Braess悖论不发生的两种情况\upcite{pas1997braess}，一种时交通量低时，如\ref{eq:Q_low}，另一种时交通量高时\ref{eq:Q_high}，当交通量符合上述两种情况时，不发生Braess现象，如\ref{eq:Q_mid}所示。
+			\begin{equation}
+				Q>\frac{2(\alpha_n-\alpha_x)}{3\beta_n+\beta_x}
+				\label{eq:Q_low}
+			\end{equation}
+			\begin{equation}
+				Q<\frac{2(\alpha_n-\alpha_x)}{\beta_n-\beta_x}
+				\label{eq:Q_high}
+			\end{equation}
+			\begin{equation}
+				\frac{2(\alpha_n-\alpha_x)}{3\beta_n+\beta_x}<Q<\frac{2(\alpha_n-\alpha_x)}{\beta_n-\beta_x}
+				\label{eq:Q_mid}
+			\end{equation}
+			其中$ Q $为交通需求，
 	\subsection{问题二}
 	考虑小区开放对周边道路通行的两个影响因素：道路条件、交通条件。
 		\subsubsection{道路条件}
